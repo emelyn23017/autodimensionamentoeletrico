@@ -2,9 +2,7 @@
 import streamlit as st
 #Importando funcoes.py
 import os
-import sys, subprocess
-subprocess.check_call([sys.executable, '-m', 'pip', 'install', 
-'openpyxl'])
+
 import pandas as pd
 from funcoes import *
 #______________________________________________________________________________________________________________________________________________________________________________________
