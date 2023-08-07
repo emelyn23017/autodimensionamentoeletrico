@@ -1,5 +1,9 @@
 import pandas as pd
 import numpy as np
+import subprocess
+
+pip_command = ["pip", "install", "openpyxl"]
+subprocess.run(pip_command, check=True)
 
 tabela_disjuntores = pd.read_excel("Dados/DISJUNTORES.xlsx")
 tabela_agrupamento = pd.read_excel("Dados/AGRUPAMENTO.xlsx")
