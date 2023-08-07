@@ -2,10 +2,10 @@
 import streamlit as st
 #Importando funcoes.py
 import os
-import subprocess
+import sys, subprocess
 
-pip_command = ["pip", "install", "openpyxl"]
-subprocess.run(pip_command)
+subprocess.check_call([sys.executable, '-m', 'pip', 'install', 
+'openpyxl'])
 import pandas as pd
 from funcoes import *
 #______________________________________________________________________________________________________________________________________________________________________________________
